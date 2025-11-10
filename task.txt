@@ -1,0 +1,4 @@
+Assignment 6:
+Create an API to perform CRUD operation in the database 
+and deploy the application on any web
+hosting provider and test the API using Postman.
