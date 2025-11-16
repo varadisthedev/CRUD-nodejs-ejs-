@@ -1,11 +1,11 @@
 const express = require("express");
-const PORT=8000;
 const dotenv = require("dotenv");
 
 dotenv.config();
 const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.xo9mqfg.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority&appName=Cluster0`;
 const {connectToMongoDb}=require('./connection.js');
 const userRouter = require("./routes/userRoutes.js");
+const PORT = process.env.PORT || 8000;
 
 const app = express();
 app.use(express.json());
